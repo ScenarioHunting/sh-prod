@@ -1,0 +1,8 @@
+- name: Checkout configs
+    uses: actions/checkout@v3
+    with:
+      repository: ScenarioHunting/ScenarioHunting
+#       path: .
+      ref: master
+#       token: ${{ secrets.RELEASE_TOKEN }} 
+

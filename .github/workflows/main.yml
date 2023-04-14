@@ -9,5 +9,5 @@ jobs:
         with:
           repository: 'ScenarioHunting/sh-stage'
           ref: 'main'
-          token: ${{ github.token }} 
+          token: ${{ secrets.GH_PAT }} 
 

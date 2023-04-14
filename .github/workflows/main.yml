@@ -9,5 +9,4 @@ jobs:
         with:
           repository: 'ScenarioHunting/sh-stage'
           ref: 'master'
-          token: ${{ secrets.GH_PAT }} 
 

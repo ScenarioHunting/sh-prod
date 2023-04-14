@@ -1,6 +1,6 @@
 name: clone-the-stage
 run-name: ${{ github.actor }} is cloning the stage
-on: delete
+on: [push, delete]
 jobs:
   build:
     runs-on: ubuntu-latest

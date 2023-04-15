@@ -5,7 +5,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: 'clone'
+        uses: actions/checkout@v3
         with:
           repository: 'ScenarioHunting/sh-stage'
           ref: 'master'

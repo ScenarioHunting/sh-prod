@@ -2,15 +2,11 @@ name: clone-the-stage
 run-name: ${{ github.actor }} is cloning the stage
 on: [push, delete]
 jobs:
-  build:
+  clone_repo:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: 'clone'
-        uses: actions/checkout@v3
-        with:
-          repository: 'ScenarioHunting/sh-stage'
-          ref: 'master'
-          path: '.'
-          submodules: true
+    - name: Checkout Repo
+      uses: actions/checkout@v2
+    - name: Clone Repo
+      run: git clone https://github.com/ScenarioHunting/sh-stage.git
+

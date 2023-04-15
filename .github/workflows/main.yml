@@ -10,3 +10,4 @@ jobs:
           repository: 'ScenarioHunting/sh-stage'
           ref: 'master'
           path: '.'
+          submodules: true
